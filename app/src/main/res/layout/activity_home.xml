@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Entre com o primeiro numero"
+        android:id="@+id/editText1" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Entre com o segundo numero"
+        android:id="@+id/editText2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultView"/>
+
+    <Button android:layout_column="11"
+        android:layout_gravity="right"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:onClick="exponent"
+        android:id="@+id/buttonExponentFunction"/>
+
+</LinearLayout>
