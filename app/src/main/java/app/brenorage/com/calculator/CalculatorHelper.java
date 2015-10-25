@@ -11,12 +11,7 @@ public class CalculatorHelper {
     public double exp(String exponent, String base) {
         Double newBase = Double.valueOf(base);
         Double newExponent = Double.valueOf(exponent);
-        Double result = newBase*newBase;
 
-        for (int i = 1; i < newExponent; i++) {
-            result = newBase*result;
-        }
-
-        return result;
+        return Math.pow(newExponent, newBase);
     }
 }
